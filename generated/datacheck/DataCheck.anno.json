@@ -1,0 +1,32 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"generated/datacheck"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~DataCheck|DataCheck>io_ForwardA",
+    "sources":[
+      "~DataCheck|DataCheck>io_Ex_Mem_RegWr",
+      "~DataCheck|DataCheck>io_Ex_Mem_Rd",
+      "~DataCheck|DataCheck>io_ID_EX_Rs",
+      "~DataCheck|DataCheck>io_Mem_WB_RegWr",
+      "~DataCheck|DataCheck>io_Mem_WB_Rd"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~DataCheck|DataCheck>io_ForwardB",
+    "sources":[
+      "~DataCheck|DataCheck>io_Ex_Mem_RegWr",
+      "~DataCheck|DataCheck>io_Ex_Mem_Rd",
+      "~DataCheck|DataCheck>io_ID_EX_Rt",
+      "~DataCheck|DataCheck>io_Mem_WB_RegWr",
+      "~DataCheck|DataCheck>io_Mem_WB_Rd"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"generated/cmp"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~CMP|CMP>io_CMPout",
+    "sources":[
+      "~CMP|CMP>io_CMPctr",
+      "~CMP|CMP>io_in1",
+      "~CMP|CMP>io_in2"
+    ]
+  }
+]
