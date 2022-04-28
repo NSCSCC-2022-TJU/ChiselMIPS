@@ -242,12 +242,6 @@ class SysTop(implicit config: Config) extends RawModule {
   }
 }
 
-class DebugVerilog extends RawModule {
-  override def desiredName = "DebugInformation"
-
-  val dcu = IO(Input(new DCUDebugBundle))
-}
-
 object SysTop extends App {
   implicit val config = new Config
 
@@ -261,6 +255,4 @@ object SysTop extends App {
   val verilogFilePath = "E:\\A_loong\\func_test_v0.01\\soc_axi_func\\rtl\\myCPU\\"
 
   (new ChiselStage).emitVerilog(new SysTop(), Array("--target-dir", verilogFilePath))
-  (new ChiselStage).emitVerilog(new DebugVerilog, Array("--target-dir", verilogFilePath))
-
 }

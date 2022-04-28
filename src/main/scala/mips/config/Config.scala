@@ -214,11 +214,3 @@ class DebugConfig {
     dcu = false
   }
 }
-
-
-class DebugInformation extends BlackBox {
-  val io = IO(new Bundle() {
-    val dcu = Input(new DCUDebugBundle)
-  })
-
-}
