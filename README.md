@@ -41,6 +41,12 @@ CP0协处理器包含以下系统控制寄存器
 - EntryLo1
 - Config
 
+## 外设
+- [ ] UART
+- [ ] Timer
+- [ ] GPIO
+- [ ] VGA
+
 ## 使用说明
 - 修改SysTop文件里SysTop对象的verilogFilePath之后，run该对象即可生成verilog文件
 - verilog文件夹下包含Cache等硬件的verilog代码，需要手动拷贝至目标目录。
